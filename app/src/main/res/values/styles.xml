@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="Widget.Theme.AtuomationJiaHua.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.AtuomationJiaHua.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <!--这里继承了仅仅具有textview的spinner的item样式,将该样式放入theme里，最后在spinner布局中引用theme-->
+    <style name="spinner" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/light_blue_A400</item>
+    </style>
+
+
+</resources>

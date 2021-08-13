@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_query_domain">
+        <item>全部</item>
+        <item>初冷</item>
+        <item>电捕焦油</item>
+        <item>鼓风机</item>
+        <item>焦油氨水</item>
+        <item>硫铵</item>
+        <item>脱硫</item>
+        <item>油库</item>
+        <item>蒸氨</item>
+        <item>终冷洗苯</item>
+    </string-array>
+
+    <string-array name="spinner_query_column">
+        <item>设备位号</item>
+        <item>用途</item>
+        <item>仪表名称</item>
+        <item>信号及规格</item>
+        <item>型号</item>
+
+    </string-array>
+
+    <string-array name="spinner_query_domain_database">
+        <item>all</item>
+        <item>chuleng</item>
+        <item>dianbujiaoyou</item>
+        <item>gufengji</item>
+        <item>jiaoyouanshui</item>
+        <item>liuan</item>
+        <item>tuoliu</item>
+        <item>youku</item>
+        <item>zhengan</item>
+        <item>zhonglengxiben</item>
+    </string-array>
+
+    <string-array name="spinner_query_column_database">
+        <item>tag</item>
+        <item>affect</item>
+        <item>name</item>
+        <item>standard</item>
+        <item>type</item>
+
+    </string-array>
+</resources>

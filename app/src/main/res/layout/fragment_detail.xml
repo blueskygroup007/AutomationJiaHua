@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bluesky.automationjiahua.ui.detail.DetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rectangle">
+
+
+            <!--
+                <TextView
+                    android:id="@+id/tv_detail_column_serial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_serial"
+                    app:layout_constraintEnd_toStartOf="@id/guideline6"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_detail_column_number"
+                    tools:text="serial" />-->
+
+            <TextView
+                android:id="@+id/tv_detail_column_tag"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="设备位号"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_tag"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_tag"
+                tools:text="tag" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_affect"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="用途"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_affect"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_affect"
+                tools:text="affect" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_parameter"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="参数"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_parameter"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_parameter"
+                tools:text="parameter" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_name"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="仪表名称"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_name"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_name"
+                tools:text="name" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_range"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="测量范围"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_range"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_range"
+                tools:text="range" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_standard"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="信号及规格"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_standard"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_standard"
+                tools:text="standard" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_mode"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="连接方式及标准"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_mode"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_mode"
+                tools:text="mode" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_pipe"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="保护管"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_pipe"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_pipe"
+                tools:text="pipe" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_type"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="型号"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_type"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_type"
+                tools:text="type" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_count"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="数量"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_count"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_count"
+                tools:text="count" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_install"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="安装地点"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_install"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_install"
+                tools:text="install" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_factory"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="制造厂"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_factory"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_factory"
+                tools:text="factory" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_remark"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="备注"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_remark"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_remark"
+                tools:text="remark" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_brand"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="供货商"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_brand"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_brand"
+                tools:text="brand" />
+
+            <TextView
+                android:id="@+id/tv_detail_column_date"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rectangle"
+                android:text="日期"
+                app:layout_constraintBottom_toBottomOf="@id/tv_detail_content_date"
+                app:layout_constraintEnd_toStartOf="@id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_detail_content_date"
+                tools:text="date" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.2" />
+
+
+            <!--    <TextView
+                    android:id="@+id/tv_detail_content_serial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="@id/guideline6"
+                    app:layout_constraintTop_toBottomOf="@id/tv_detail_content_number"
+                    tools:text="serial" />-->
+
+            <TextView
+                android:id="@+id/tv_detail_content_tag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="tag" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_affect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/rectangle"
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_tag"
+                tools:text="affect" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_parameter"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_affect"
+                tools:text="parameter" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/rectangle"
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@id/tv_detail_content_range"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_parameter"
+                tools:text="A low-cost Android screen adaptation solution (今日头条屏幕适配方案终极版，一个极低成本的 Android 屏幕适配方案)" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_range"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/rectangle"
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_name"
+                tools:text="range" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_standard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/rectangle"
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_range"
+                tools:text="standard" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_standard"
+                tools:text="mode" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_pipe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_mode"
+                tools:text="pipe" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/rectangle"
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_pipe"
+                tools:text="type" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/rectangle"
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_type"
+                tools:text="count" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_install"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/rectangle"
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_count"
+                tools:text="install" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_factory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_install"
+                tools:text="factory" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_remark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_factory"
+                tools:text="remark" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_brand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_remark"
+                tools:text="brand" />
+
+            <TextView
+                android:id="@+id/tv_detail_content_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/rectangle"
+                android:paddingStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline6"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_content_brand"
+                tools:text="date" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

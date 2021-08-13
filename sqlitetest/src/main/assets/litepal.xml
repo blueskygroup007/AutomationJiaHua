@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <!--    数据库名  -->
+    <dbname value="tuoliu.db" />
+    <!--    数据库版本号  -->
+    <version value="1" />
+    <list>
+        <!--    数据表：用于指定所有的映射模型-->
+        <mapping class="com.bluesky.sqlitetest.Device" />
+    </list>
+</litepal>

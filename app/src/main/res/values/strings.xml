@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AtuomationJiaHua</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">查询</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="str_tv_header_tag">工位号</string>
+    <string name="str_tv_header_standard">规格</string>
+    <string name="str_tv_header_range">测量范围</string>
+    <string name="str_menu_search">搜索栏</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="str_tv_header_domain">区域</string>
+    <string name="str_splash">设备表查询</string>
+    <string name="str_btn_splash_enter">进入</string>
+    <string name="str_tv_header_serial">序号</string>
+    <string name="menu_detail">详情</string>
+</resources>
